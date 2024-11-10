@@ -94,6 +94,44 @@ document.getElementById('BruteF').addEventListener('click', function() {
     document.body.removeChild(link);
 });
 
+/* Download TERMUX PDF */
+
+document.getElementById('Termux').addEventListener('click', function() {
+    // Specify the URL of the PDF file
+    const pdfUrl = 'assets/Task 6.pdf';
+
+    // Create an invisible anchor element
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = 'assets/Task 6.pdf';  // File name for the download
+
+    // Programmatically trigger the download by clicking the anchor element
+    document.body.appendChild(link);
+    link.click();
+
+    // Remove the anchor element after the download starts
+    document.body.removeChild(link);
+});
+
+/* Download Burp Suite PDF */
+
+document.getElementById('spf').addEventListener('click', function() {
+    // Specify the URL of the PDF file
+    const pdfUrl = 'assets/Task 7.pdf';
+
+    // Create an invisible anchor element
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = 'assets/Task 7.pdf';  // File name for the download
+
+    // Programmatically trigger the download by clicking the anchor element
+    document.body.appendChild(link);
+    link.click();
+
+    // Remove the anchor element after the download starts
+    document.body.removeChild(link);
+});
+
 
 window.addEventListener('load', function() {
     const splashScreen = document.getElementById('splash-screen');
